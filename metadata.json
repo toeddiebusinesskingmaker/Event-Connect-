@@ -1,0 +1,6 @@
+{
+  "name": "Event Connect",
+  "description": "Mobile-first PWA for live event attendee check-in, directory networking, private note-taking, live chat, and shared photo streams with privacy by design.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

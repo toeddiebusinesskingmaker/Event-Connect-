@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: #f0f2f5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #111b21;
+}
+
+.dark body {
+  background-color: #111827 !important;
+  color: #f9fafb !important;
+}
+
+.whatsapp-chat-bg {
+  background-color: #efeae2;
+  background-image: radial-gradient(rgba(18, 140, 126, 0.08) 1px, transparent 1px), radial-gradient(rgba(7, 94, 84, 0.06) 1px, #efeae2 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.dark .whatsapp-chat-bg {
+  background-color: #0b141a !important;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), radial-gradient(rgba(255, 255, 255, 0.02) 1px, #0b141a 1px) !important;
+}
+
+.whatsapp-header {
+  background-color: #075E54;
+}
+
+.dark .whatsapp-header,
+.dark .bg-\[\#075E54\] {
+  background-color: #202c33 !important;
+}
+
+.whatsapp-btn-primary {
+  background-color: #00A884;
+  color: #ffffff;
+  transition: all 0.15s ease-in-out;
+}
+
+.whatsapp-btn-primary:hover {
+  background-color: #008f70;
+}
+
+.whatsapp-bubble-sent {
+  background-color: #d9fdd3;
+  color: #111b21;
+}
+
+.dark .whatsapp-bubble-sent {
+  background-color: #005c4b !important;
+  color: #e9edef !important;
+}
+
+.whatsapp-bubble-received {
+  background-color: #ffffff;
+  color: #111b21;
+}
+
+.dark .whatsapp-bubble-received {
+  background-color: #202c33 !important;
+  color: #e9edef !important;
+}
+
+/* Global Dark Mode Overrides for hardcoded classes */
+.dark .bg-white {
+  background-color: #202c33 !important;
+  border-color: #2a3942 !important;
+}
+
+.dark .text-slate-900,
+.dark .text-slate-800, 
+.dark .text-slate-700, 
+.dark .text-slate-600, 
+.dark .text-\[\#111b21\] {
+  color: #e9edef !important;
+}
+
+.dark .text-slate-500, 
+.dark .text-\[\#54656f\] {
+  color: #8696a0 !important;
+}
+
+.dark .bg-slate-50, 
+.dark .bg-slate-100, 
+.dark .bg-\[\#e9edef\] {
+  background-color: #111b21 !important;
+  border-color: #2a3942 !important;
+}
+
+.dark .border-slate-100, 
+.dark .border-slate-200, 
+.dark .border-slate-300, 
+.dark .border-slate-200\/80 {
+  border-color: #2a3942 !important;
+}
+
+/* Fix for buttons and backgrounds in dark mode */
+.dark .text-indigo-700, .dark .text-indigo-600 {
+  color: #818cf8 !important;
+}
+
+.dark .bg-indigo-50, .dark .bg-indigo-100 {
+  background-color: #312e81 !important;
+  color: #e0e7ff !important;
+}
+
+.dark .border-indigo-100, .dark .border-indigo-200 {
+  border-color: #3730a3 !important;
+}
+
+.dark .bg-emerald-50, .dark .bg-emerald-100 {
+  background-color: #064e3b !important;
+  color: #a7f3d0 !important;
+}
+
+.dark .text-emerald-700, .dark .text-emerald-600 {
+  color: #34d399 !important;
+}
+
+.dark .bg-rose-50, .dark .bg-rose-100 {
+  background-color: #4c0519 !important;
+  color: #ffe4e6 !important;
+}
+
+.dark .text-rose-700, .dark .text-rose-600 {
+  color: #fb7185 !important;
+}
+
+.dark .bg-amber-50, .dark .bg-amber-100 {
+  background-color: #78350f !important;
+  color: #fde68a !important;
+}
+
+.dark .text-amber-700, .dark .text-amber-600 {
+  color: #fbbf24 !important;
+}
+
+.dark input, .dark textarea, .dark select {
+  background-color: #111b21 !important;
+  color: #e9edef !important;
+  border-color: #2a3942 !important;
+}
+
+.dark ::placeholder {
+  color: #8696a0 !important;
+}
+
+.dark .bg-emerald-600 {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+}
+
+.dark .bg-indigo-600 {
+  background-color: #4f46e5 !important;
+  color: #ffffff !important;
+}
